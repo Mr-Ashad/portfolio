@@ -12012,6 +12012,7 @@ textarea.form-control-lg {
 
 html {
   scroll-behavior: smooth;
+  background-color: #000;
   font-size: 62.5%;
   overflow-x: hidden;
 }
@@ -12458,6 +12459,7 @@ section {
 #hero .hero-links {
   justify-content: flex-end;
   margin-top: 1rem;
+  padding-left: 4rem;
   display: flex;
 }
 
