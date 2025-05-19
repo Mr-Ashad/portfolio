@@ -8,10 +8,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
         });
     });
     function smoothScrollTo(target) {
-        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+        const headerOffset = 60; // <-- adjust as needed
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
         const startPosition = window.pageYOffset;
         const distance = targetPosition - startPosition;
-        const duration = 1300; // make this bigger for slower scroll
+        const duration = 1100; // make this bigger for slower scroll
         let start = null;
         function step(timestamp) {
             if (!start) start = timestamp;
